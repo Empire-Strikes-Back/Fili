@@ -1,4 +1,4 @@
-i am dgraph-explorer program - i explore dgraph database
+i am dgraph-explorer program
 
 my language is clojure
 my runtime is jvm
