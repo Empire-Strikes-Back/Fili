@@ -1,1 +1,1 @@
-i am dgraph-explorer program - i explore dgraph database
+if there's a key - there must be a door
