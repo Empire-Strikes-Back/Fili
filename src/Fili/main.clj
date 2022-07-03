@@ -25,7 +25,7 @@
    [Fili.apples]
    [Fili.B12]
    [Fili.salt]
-   [Fili.oats]
+   [Fili.bread]
    [Fili.dates])
   (:import
    (javax.swing JFrame WindowConstants JPanel JScrollPane JTextArea BoxLayout JEditorPane ScrollPaneConstants SwingUtilities JDialog)
@@ -75,7 +75,7 @@
    '[Fili.apples]
    '[Fili.B12]
    '[Fili.salt]
-   '[Fili.oats]
+   '[Fili.bread]
    '[Fili.dates]
    '[Fili.main]
    :reload))
@@ -237,7 +237,7 @@
             jpanel-apples (JPanel.)
             jpanel-B12 (JPanel.)
             jpanel-salt (JPanel.)
-            jpanel-oats (JPanel.)
+            jpanel-bread (JPanel.)
             jpanel-dates (JPanel.)]
 
         (doto jtabbed-pane
@@ -245,11 +245,11 @@
           (.addTab "apples" jpanel-apples)
           (.addTab "B12" jpanel-B12)
           (.addTab "salt" jpanel-salt)
-          (.addTab "oats" jpanel-oats)
+          (.addTab "bread" jpanel-bread)
           (.addTab "dates" jpanel-dates)
-          (.setSelectedComponent jpanel-oats))
+          (.setSelectedComponent jpanel-bread))
 
-        (Fili.oats/process {:jpanel-tab jpanel-oats
+        (Fili.bread/process {:jpanel-tab jpanel-bread
                               :db-data-dirpath db-data-dirpath})
 
         (settings-process {:jpanel-tab jpanel-B12
