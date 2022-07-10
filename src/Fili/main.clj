@@ -26,7 +26,7 @@
    [Fili.B12]
    [Fili.salt]
    [Fili.oats]
-   [Fili.wine])
+   [Fili.raisins])
   (:import
    (javax.swing JFrame WindowConstants JPanel JScrollPane JTextArea BoxLayout JEditorPane ScrollPaneConstants SwingUtilities JDialog)
    (javax.swing JMenu JMenuItem JMenuBar KeyStroke JOptionPane JToolBar JButton JToggleButton JSplitPane JLabel JTextPane JTextField JTable JTabbedPane)
@@ -76,7 +76,7 @@
    '[Fili.B12]
    '[Fili.salt]
    '[Fili.oats]
-   '[Fili.wine]
+   '[Fili.raisins]
    '[Fili.main]
    :reload))
 
@@ -238,7 +238,7 @@
             jpanel-B12 (JPanel.)
             jpanel-salt (JPanel.)
             jpanel-oats (JPanel.)
-            jpanel-wine (JPanel.)]
+            jpanel-raisins (JPanel.)]
 
         (doto jtabbed-pane
           (.setTabLayoutPolicy JTabbedPane/SCROLL_TAB_LAYOUT)
@@ -246,7 +246,7 @@
           (.addTab "B12" jpanel-B12)
           (.addTab "salt" jpanel-salt)
           (.addTab "oats" jpanel-oats)
-          (.addTab "wine" jpanel-wine)
+          (.addTab "raisins" jpanel-raisins)
           (.setSelectedComponent jpanel-oats))
 
         (Fili.oats/process {:jpanel-tab jpanel-oats
