@@ -23,6 +23,7 @@
    [glicko2.core]
 
    [Fili.apples]
+   [Fili.grapefruit]
    [Fili.B12]
    [Fili.salt]
    [Fili.oats]
@@ -73,6 +74,7 @@
   []
   (require
    '[Fili.apples]
+   '[Fili.grapefruit]
    '[Fili.B12]
    '[Fili.salt]
    '[Fili.oats]
@@ -235,6 +237,7 @@
 
       (let [jtabbed-pane (JTabbedPane.)
             jpanel-apples (JPanel.)
+            jpanel-grapefruit (JPanel.)
             jpanel-B12 (JPanel.)
             jpanel-salt (JPanel.)
             jpanel-oats (JPanel.)
@@ -243,6 +246,7 @@
         (doto jtabbed-pane
           (.setTabLayoutPolicy JTabbedPane/SCROLL_TAB_LAYOUT)
           (.addTab "apples" jpanel-apples)
+          (.addTab "grapefruit" jpanel-grapefruit)
           (.addTab "B12" jpanel-B12)
           (.addTab "salt" jpanel-salt)
           (.addTab "oats" jpanel-oats)
