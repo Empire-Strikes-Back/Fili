@@ -27,6 +27,7 @@
    [Fili.B12]
    [Fili.salt]
    [Fili.oats]
+   [Fili.water]
    [Fili.wine])
   (:import
    (javax.swing JFrame WindowConstants JPanel JScrollPane JTextArea BoxLayout JEditorPane ScrollPaneConstants SwingUtilities JDialog)
@@ -78,6 +79,7 @@
    '[Fili.B12]
    '[Fili.salt]
    '[Fili.oats]
+   '[Fili.water]
    '[Fili.wine]
    '[Fili.main]
    :reload))
@@ -241,6 +243,7 @@
             jpanel-B12 (JPanel.)
             jpanel-salt (JPanel.)
             jpanel-oats (JPanel.)
+            jpanel-water (JPanel.)
             jpanel-wine (JPanel.)]
 
         (doto jtabbed-pane
@@ -250,6 +253,7 @@
           (.addTab "B12" jpanel-B12)
           (.addTab "salt" jpanel-salt)
           (.addTab "oats" jpanel-oats)
+          (.addTab "water" jpanel-water)
           (.addTab "wine" jpanel-wine)
           (.setSelectedComponent jpanel-oats))
 
