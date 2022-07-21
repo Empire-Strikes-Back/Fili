@@ -28,7 +28,7 @@
    [Fili.salt]
    [Fili.oats]
    [Fili.water]
-   [Fili.wine])
+   [Fili.raisins])
   (:import
    (javax.swing JFrame WindowConstants JPanel JScrollPane JTextArea BoxLayout JEditorPane ScrollPaneConstants SwingUtilities JDialog)
    (javax.swing JMenu JMenuItem JMenuBar KeyStroke JOptionPane JToolBar JButton JToggleButton JSplitPane JLabel JTextPane JTextField JTable JTabbedPane)
@@ -80,7 +80,7 @@
    '[Fili.salt]
    '[Fili.oats]
    '[Fili.water]
-   '[Fili.wine]
+   '[Fili.raisins]
    '[Fili.main]
    :reload))
 
@@ -244,7 +244,7 @@
             jpanel-salt (JPanel.)
             jpanel-oats (JPanel.)
             jpanel-water (JPanel.)
-            jpanel-wine (JPanel.)]
+            jpanel-raisins (JPanel.)]
 
         (doto jtabbed-pane
           (.setTabLayoutPolicy JTabbedPane/SCROLL_TAB_LAYOUT)
@@ -254,7 +254,7 @@
           (.addTab "salt" jpanel-salt)
           (.addTab "oats" jpanel-oats)
           (.addTab "water" jpanel-water)
-          (.addTab "wine" jpanel-wine)
+          (.addTab "raisins" jpanel-raisins)
           (.setSelectedComponent jpanel-oats))
 
         (Fili.oats/process {:jpanel-tab jpanel-oats
